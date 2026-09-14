@@ -47,7 +47,7 @@ L'APK de débogage est généré dans `app/build/outputs/apk/debug/app-debug.apk
 
 Les tests présents couvrent notamment les calculs du suivi d'hydratation, l'accès aux ressources Android et la génération d'une capture de l'écran de démonstration.
 
-## Validation locale et rapport des corrections
+## Validation locale
 
 Vérification du 14 septembre 2026 avec la version d'Android Studio imposée :
 
@@ -56,8 +56,6 @@ Vérification du 14 septembre 2026 avec la version d'Android Studio imposée :
 - Android Lint : aucune erreur bloquante et 37 avertissements conservés, notamment des suggestions de mise à jour.
 - Installation et lancement depuis Android Studio sur l'émulateur Small Phone API 33 (Android 13).
 - Ajout de 250 ml vérifié à l'écran : un verre, 250 ml au total et 1 750 ml restants.
-
-Le [rapport Word](docs/Rapport_des_corrections.docx) et sa [version Markdown](docs/CORRECTIONS.md) détaillent le diagnostic, les corrections et la procédure de reproduction. Les [preuves de validation](docs/preuves/validation.txt) et une [capture de l'application](docs/preuves/application-250ml.png) sont incluses.
 
 Projet GitHub : [YeoGermain/HydrationTracker](https://github.com/YeoGermain/HydrationTracker). Pour récupérer les sources, utiliser **Code → Download ZIP**, puis ouvrir le dossier extrait dans Android Studio. Les SDK et dépendances doivent être disponibles ou téléchargés sur la machine du destinataire.
 
