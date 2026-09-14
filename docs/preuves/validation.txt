@@ -1,0 +1,44 @@
+VALIDATION LOCALE DE HYDRATIONTRACKER — 14 SEPTEMBRE 2026
+Auteur: Yeo Germain
+
+COMPILATION ET ANALYSE
+.\gradlew.bat :app:assembleDebug :app:testDebugUnitTest :app:lintDebug --console=plain
+> Task :app:testDebugUnitTest UP-TO-DATE
+> Task :app:assembleDebug
+> Task :app:lintDebug
+BUILD SUCCESSFUL in 17s
+57 actionable tasks: 7 executed, 5 from cache, 45 up-to-date
+
+NOUVELLE EXECUTION DES TESTS
+.\gradlew.bat :app:testDebugUnitTest --rerun --console=plain
+> Task :app:testDebugUnitTest
+BUILD SUCCESSFUL in 36s
+31 actionable tasks: 1 executed, 4 from cache, 26 up-to-date
+
+com.example.ExampleRobolectricTest: tests=1, failures=0, errors=0, skipped=0, timestamp=2026-09-14T12:37:02 UTC
+com.example.ExampleUnitTest: tests=1, failures=0, errors=0, skipped=0, timestamp=2026-09-14T12:37:12 UTC
+com.example.GreetingScreenshotTest: tests=1, failures=0, errors=0, skipped=0, timestamp=2026-09-14T12:37:12 UTC
+com.example.HydrationViewModelTest: tests=4, failures=0, errors=0, skipped=0, timestamp=2026-09-14T12:37:31 UTC
+
+ANDROID LINT
+Warning: 37
+RedundantLabel: 1
+AndroidGradlePluginVersion: 2
+GradleDependency: 23
+ModifierParameter: 1
+UnusedResources: 7
+IconDipSize: 2
+IconLocation: 1
+Error/Fatal: 0
+
+EXECUTION DANS ANDROID STUDIO
+Meerkat Feature Drop 2024.3.2 ; Small Phone API 33 ; Android 13.
+Journal Android Studio : 2026-09-14 12:36:55 UTC, lancement de com.example.MainActivity sur emulator-5554.
+Processus de l’application observé après le lancement : PID 10232.
+Émulateur initialement en veille ; réveil puis affichage de Hydratation.
+Test manuel : 0 ml -> Ajouter 250 ml -> total 250 ml, 1 verre, 1750 ml restants, 12 % affichés.
+Capture : docs/preuves/application-250ml.png
+
+APK DE DEBOGAGE
+app/build/outputs/apk/debug/app-debug.apk
+SHA256: 348418988d9bf388cc831d4f6364ebb7cf2d84bf73f565f53def0709c079f0b7
